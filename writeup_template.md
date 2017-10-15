@@ -31,7 +31,7 @@ Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/4
 ---
 ## Writeup / README
 
-# 1. Provide a Writeup / README that includes all the rubric points and how was addressed each one. 
+### 1. Provide a Writeup / README that includes all the rubric points and how was addressed each one. 
 
 Writeup is this document.
 
@@ -39,7 +39,7 @@ Here is a link to my [project code](https://github.com/greenfield932/CarND-Traff
 
 ## Data Set Summary & Exploration
 
-# 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I used the python to calculate summary statistics of the traffic
 signs data set:
@@ -50,7 +50,7 @@ signs data set:
 * The shape of a traffic sign image is 32x32x3
 * The number of unique classes/labels in the data set is 43
 
-# 2. Include an exploratory visualization of the dataset.
+### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed among the classes and a set of random images from training dataset
 representing the dataset content.
@@ -60,7 +60,7 @@ representing the dataset content.
 
 ## Design and Test a Model Architecture
 
-# 1. Image data preprocessing
+### 1. Image data preprocessing
 
 To preprocess the data I used convertion images to grayscale using cvtColor function from opencv library and then applied normalization using exposure.equalize_adapthist function from skimage library.
 Gray scale convertation was made to reduce amount of channels, and histogram normalization centers image data around it's mean value.
@@ -77,7 +77,7 @@ Here is an example of an original image and an augmented image:
 
 Result training dataset contains concatenation of original and augmented dataset (rotation, tranfsorm, rotation+transform per image from original dataset) and consists of 139196 images
 
-# 2. Final model architecture.
+### 2. Final model architecture.
 
 My final model based on modification of LeNet architecture by adding dropout layers and increasing depth of convolutional and size of fully connected layers, consists of the following layers:
 
@@ -100,11 +100,11 @@ My final model based on modification of LeNet architecture by adding dropout lay
 | Fully connected	| input 150 output 43				|
  
 
-# 3. Model training
+### 3. Model training
 
 To train model I used AdamOptimizer algorithm, batch size of 128 and 100 epochs with learning rate 0.001
 
-# 4. Discussion of the model
+### 4. Discussion of the model
 
 My final model results were:
 * training set accuracy of 0.996
@@ -139,11 +139,11 @@ Important design choices:
  
 ## Test a Model on New Images
 
-# 1. Overview of new data found on the web (maps.google.com, I used mostly Berlin roads)
+### 1. Overview of new data found on the web (maps.google.com, I used mostly Berlin roads)
 
 ![alt text][image9]
 
-# 2. Models predictions
+### 2. Models predictions
 
 The results of the prediction:
 
@@ -151,7 +151,7 @@ The results of the prediction:
 
 The model was able to correctly guess 12 of the 13 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 97%.
 
-# 3. Discussion on model certainty
+### 3. Discussion on model certainty
 
 As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident about it's predictions, because the probability 
 for all correct answers is very high relative to other probabilities.
@@ -162,7 +162,7 @@ The code for making predictions on my final model is located in the 19th cell of
 
 
 ## (Optional) Visualizing the Neural Network
-# 1. Discuss the visual output of the trained network's feature maps.
+### 1. Discuss the visual output of the trained network's feature maps.
 
 ![alt text][image20]
 
