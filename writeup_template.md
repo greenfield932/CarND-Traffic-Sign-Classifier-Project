@@ -138,7 +138,7 @@ The first image might be difficult to classify because ...
 
 Here are the results of the prediction:
 
-![alt text][image18]
+![alt text][image17]
 
 The model was able to correctly guess 12 of the 13 traffic signs, which gives an accuracy of 92%. This compares favorably to the accuracy on the test set of ...
 
@@ -147,7 +147,7 @@ The model was able to correctly guess 12 of the 13 traffic signs, which gives an
 As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident in it's predictions because when answer is correct the probability 
 for the answer is very high. When answer is wrong the are several high probabilities for different signs.
 
-![alt text][image19]
+![alt text][image18]
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
