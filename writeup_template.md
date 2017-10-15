@@ -73,11 +73,11 @@ The difference between the original data set and the augmented data set is the f
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
+| Layer       		|     Description				| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
+| Input         	| 32x32x1 RGB image   				| 
+| Convolution 3x3     	| 1x1 stride, valid padding, outputs 28x28x6 	|
+| RELU			|						|
 | Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
 | Convolution 3x3	    | etc.      									|
 | Fully connected		| etc.        									|
@@ -94,9 +94,9 @@ To train the model, I used an ....
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.996
+* validation set accuracy of 0.975
+* test set accuracy of 0.95
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
