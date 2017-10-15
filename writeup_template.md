@@ -18,10 +18,11 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/pr.png "Precision and Recall"
-[image9]: ./unseen/9.png ""
+[image9]: ./unseen/web.png ""
 [image17]: ./examples/prediction.png ""
-[image18]: ./examples/probabilities.png "Before model tunning"
 [image19]: ./examples/probabilities2.png "After model tunning"
+[image20]: ./examples/conv1.png "Output of conv1 layer"
+[image21]: ./examples/conv2.png "Output of conv2 layer"
 
 
 **Rubric Points**
@@ -147,18 +148,24 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 12 of the 13 traffic signs, which gives an accuracy of 92%. This compares favorably to the accuracy on the test set of 96%.
 
-3. Discussion in model certainty
+3. Discussion on model certainty
 
-As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident in it's predictions because when answer is correct the probability 
-for the answer is very high. When answer is wrong the are several high probabilities for different signs.
+As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident in it's predictions, because the probability 
+for all correct answers is very high relative to other probabilities.
 
-![alt text][image18]![alt text][image19]
+![alt text][image19]
 
 The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
 
+**(Optional) Visualizing the Neural Network**
+**1. Discuss the visual output of the trained network's feature maps.**
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+![alt text][image20]
 
+As seen on output of convolutional layer 1 there are quite visible features used to recognize keep right sign. There are strong outlines of the sign, round edge, arrow.
+
+![alt text][image21]
+
+The arrow can be found even on second layer.
 
