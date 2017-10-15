@@ -120,6 +120,8 @@ So I decided to extend convolutional layers depth to add more filters. Also I ad
 After training of 100 epochs I finally got 97% of accuracy on test set and 100% accuracy on unseen signs from web.
 Precision and recall also increased up to 0.9 for most of signs.
 
+![alt text][image8]
+
 Convolutional layer might work well for this problem because it provide robustness to deformations of the image data content, and was designed to extract features from images so it is a 
 direct application for traffic signs classification problem.
 
@@ -140,13 +142,12 @@ Important design choices:
 ![alt text][image9]
 
 2. Models predictions
-iscuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction:
+The results of the prediction:
 
 ![alt text][image17]
 
-The model was able to correctly guess 12 of the 13 traffic signs, which gives an accuracy of 92%. This compares favorably to the accuracy on the test set of 96%.
+The model was able to correctly guess 12 of the 13 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 97%.
 
 3. Discussion on model certainty
 
