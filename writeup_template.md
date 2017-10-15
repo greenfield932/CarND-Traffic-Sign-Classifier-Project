@@ -144,13 +144,13 @@ Important design choices:
 
 ![alt text][image9]
 
-### 2. Models predictions
+#### 2. Models predictions
 
 The results of the prediction:
 
 ![alt text][image17]
 
-The model was able to correctly guess 12 of the 13 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 97%.
+The model was able to correctly guess 12 of the 13 traffic signs before architecture tunning and 13 after, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 97%.
 
 ### 3. Discussion on model certainty
 
