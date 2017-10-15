@@ -110,8 +110,6 @@ To train model I used AdamOptimizer algorithm, batch size of 128 and 100 epochs 
 
 4. Discussion of the model
 
-Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
-
 My final model results were:
 * training set accuracy of 0.996
 * validation set accuracy of 0.987
@@ -130,6 +128,10 @@ Precision and recall also increased up to 0.9 for most of signs.
 
 Convolutional layer might work well for this problem because it provide robustness to deformations of the image data content, and was designed to extract features from images so it is a 
 direct application for traffic signs classification problem.
+
+This model architecture is suitable for this problem because based on LeNet architecture which was developed to recognize hand written digits. I believe this task 
+is very close to traffic signs classification, except hand written digits is likely have less features than traffic signs, so modification of initial architecture may increase
+the model accuracy.
 
 Important design choices: 
 * preprocess and extend data to get better results on training and evaluating network
