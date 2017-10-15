@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/data_summary.png "Data summary"
 [image2]: ./examples/sign_preview.png "Signs preview"
 [image3]: ./examples/preprocessing1.png "Preprocessing"
-[image4]: ./examples/data_overview.png "Traffic Sign 1"
+[image4]: ./examples/augmentation.png "Augmentation"
 [image5]: ./examples/preprocessing.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
@@ -52,6 +52,7 @@ representing the dataset content.
 **Design and Test a Model Architecture**
 
 1. Image data preprocessing
+
 To preprocess the data I used convertion images to grayscale using cvtColor function from opencv library and then applied normalization using exposure.equalize_adapthist function from skimage library.
 Gray scale convertation was made to reduce amount of channels, and histogram normalization centers image data around it's mean value.
 
@@ -59,15 +60,11 @@ Here is an example of a traffic sign image before and after grayscaling and norm
 
 ![alt text][image3]
 
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
+CNN have built-in invariance to small perturbations like rotations and transformations. I used data generation to extend original training set to make neural network more robust to deformations.
 
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+![alt text][image4]
 
 The difference between the original data set and the augmented data set is the following ... 
 
