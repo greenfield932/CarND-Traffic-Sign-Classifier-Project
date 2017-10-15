@@ -1,5 +1,3 @@
-**Traffic Sign Recognition Project** 
-
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
@@ -46,8 +44,8 @@ signs data set:
 
 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed among the classes and a set of random images from training datasets
-represents overview of the dataset content.
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed among the classes and a set of random images from training dataset
+representing the dataset content.
 
 ![alt text][image1]
 ![alt text][image2]
