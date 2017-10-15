@@ -19,13 +19,6 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/pr.png "Precision and Recall"
 [image9]: ./unseen/9.png ""
-[image10]: ./unseen/10.png ""
-[image11]: ./unseen/11.png ""
-[image12]: ./unseen/12.png ""
-[image13]: ./unseen/13.png ""
-[image14]: ./unseen/14.png ""
-[image15]: ./unseen/15.png ""
-[image16]: ./unseen/16.png ""
 [image17]: ./examples/prediction.png ""
 [image18]: ./examples/probabilities.png "Before model tunning"
 [image19]: ./examples/probabilities2.png "After model tunning"
@@ -143,7 +136,7 @@ Important design choices:
 
 1. Overview of new data found on the web (maps.google.com, I used mostly Berlin roads)
 
-![alt text][image10]![alt text][image12]![alt text][image13]
+![alt text][image9]
 
 2. Models predictions
 iscuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
