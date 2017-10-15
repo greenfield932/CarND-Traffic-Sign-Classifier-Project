@@ -31,9 +31,11 @@ Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/4
 ---
 **Writeup / README**
 
-1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+1. Provide a Writeup / README that includes all the rubric points and how was addressed each one. 
 
-You're reading it! and here is a link to my [project code](https://github.com/greenfield932/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+Writeup is this document.
+
+Here is a link to my [project code](https://github.com/greenfield932/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 **Data Set Summary & Exploration**
 
@@ -151,7 +153,7 @@ The model was able to correctly guess 12 of the 13 traffic signs, which gives an
 
 3. Discussion on model certainty
 
-As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident in it's predictions, because the probability 
+As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident about it's predictions, because the probability 
 for all correct answers is very high relative to other probabilities.
 
 ![alt text][image19]
