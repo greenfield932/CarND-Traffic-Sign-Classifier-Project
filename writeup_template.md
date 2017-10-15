@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/pr.png "Precision and Recall"
-[image9]: ./unseen/web.png ""
+[image9]: ./examples/web.png ""
 [image17]: ./examples/prediction.png ""
 [image19]: ./examples/probabilities2.png "After model tunning"
 [image20]: ./examples/conv1.png "Output of conv1 layer"
