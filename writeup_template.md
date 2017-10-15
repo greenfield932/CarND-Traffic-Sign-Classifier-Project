@@ -18,6 +18,14 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/pr.png "Precision and Recall"
+[image9]: ./unseen/9.png ""
+[image10]: ./unseen/10.png ""
+[image11]: ./unseen/11.png ""
+[image12]: ./unseen/12.png ""
+[image13]: ./unseen/13.png ""
+[image14]: ./unseen/14.png ""
+[image15]: ./unseen/15.png ""
+[image16]: ./unseen/16.png ""
 
 **Rubric Points**
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -66,26 +74,29 @@ Here is an example of an original image and an augmented image:
 
 ![alt text][image4]
 
-The difference between the original data set and the augmented data set is the following ... 
+The difference between the original data set and the augmented data set is: augmented dataset is 3 times bigger (rotation, tranfsorm, rotation+transform per image).
+Result dataset contains concatenation of original and augmented.
 
-
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+**2. Final model architecture.**
 
 My final model consisted of the following layers:
 
 | Layer       		|     Description				| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         	| 32x32x1 RGB image   				| 
-| Convolution 3x3     	| 1x1 stride, valid padding, outputs 28x28x6 	|
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
 | RELU			|						|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x16			|
+| Convolution 5x5	| 1x1 stride, valid padding, outputs 10x10x16	|
+| RELU			|						|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16			|
+| Flatten		| input 5x5x32 output 400			|
+| Fully connected	| input 400 output 120				|
+| RELU			|						|
+| Fully connected	| input 120 output 84				|
+| RELU			|						|
+| Fully connected	| input 84 output 43				|
  
-
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
@@ -117,8 +128,8 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image9] ![alt text][image10] ![alt text][image11] 
+![alt text][image12] ![alt text][image13]
 
 The first image might be difficult to classify because ...
 
