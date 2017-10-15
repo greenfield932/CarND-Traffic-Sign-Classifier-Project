@@ -1,4 +1,4 @@
-**Build a Traffic Sign Recognition Project**
+***Build a Traffic Sign Recognition Project***
 
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
@@ -57,6 +57,7 @@ representing the dataset content.
 
 ![alt text][image1]
 ![alt text][image2]
+
 **Design and Test a Model Architecture**
 
 1. Image data preprocessing
@@ -74,8 +75,7 @@ Here is an example of an original image and an augmented image:
 
 ![alt text][image4]
 
-The difference between the original data set and the augmented data set is: augmented dataset is 3 times bigger (rotation, tranfsorm, rotation+transform per image).
-Result dataset contains concatenation of original and augmented.
+Result training dataset contains concatenation of original and augmented dataset (rotation, tranfsorm, rotation+transform per image from original dataset) and consists of 139196 images
 
 2. Final model architecture.
 
