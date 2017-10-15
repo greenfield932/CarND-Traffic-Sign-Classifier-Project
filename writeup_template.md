@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 
 
 ## Rubric Points
-Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
 
 ---
 ## Writeup / README
@@ -39,7 +39,7 @@ Here is a link to my [project code](https://github.com/greenfield932/CarND-Traff
 
 ## Data Set Summary & Exploration
 
-### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+### 1. Provide a basic summary of the data set. 
 
 I used the python to calculate summary statistics of the traffic
 signs data set:
@@ -52,10 +52,11 @@ signs data set:
 
 ### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed among the classes and a set of random images from training dataset
-representing the dataset content.
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed among the classes.
 
 ![alt text][image1]
+
+Overview of the dataset content - a set of random images from training dataset.
 ![alt text][image2]
 
 ## Design and Test a Model Architecture
