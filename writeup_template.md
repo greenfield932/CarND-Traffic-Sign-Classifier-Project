@@ -143,7 +143,7 @@ Important design choices:
 
 1. Overview of new data found on the web (maps.google.com, I used mostly Berlin roads)
 
-[image9] [image10] [image11] [image12] [image13]
+![alt text][image10]![alt text][image12]![alt text][image13]
 
 2. Models predictions
 iscuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
@@ -159,7 +159,7 @@ The model was able to correctly guess 12 of the 13 traffic signs, which gives an
 As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident in it's predictions because when answer is correct the probability 
 for the answer is very high. When answer is wrong the are several high probabilities for different signs.
 
-![alt text][image18][image19]
+![alt text][image18]![alt text][image19]
 
 The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
