@@ -165,12 +165,6 @@ for all correct answers is very high relative to other probabilities.
 Let's consider deep analysis for wrong cases
 
 ![alt text][image22]
-When unswer is wrong the model is not confident in it's prediction and top 5 probabilites are low at all (<0.35).
-The sign was not predicted most likely because of position (not centered) and uniform deformation of the sign (height>width while the sign proportions should be equal). 
-I believe adding augmentation with centering and scale deformation, current project contains only non-uniform deformations.
-will increase model performance for such cases.
-
-![alt text][image22]
 For this traffic sign wrong predicted sign is quite similar to the expected. It has equal outlines. The model confidence in this case very close for both classes (0.55 vs 0.4).
 Wrong prediction can be caused by relatively low subset of "pedestrians" signs (around 300) vs "right of way at the next intersection" (around 1250).
 I believe balancing of the dataset may fix this problem.
