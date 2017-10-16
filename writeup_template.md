@@ -23,6 +23,8 @@ The goals / steps of this project are the following:
 [image19]: ./examples/probabilities2.png "After model tunning"
 [image20]: ./examples/conv1.png "Output of conv1 layer"
 [image21]: ./examples/conv2.png "Output of conv2 layer"
+[image22]: ./examples/case0.png "case 0"
+[image23]: ./examples/case1.png "case 1"
 
 
 ## Rubric Points
@@ -108,8 +110,8 @@ To train model I used AdamOptimizer algorithm, batch size of 128 and 100 epochs 
 #### 4. Discussion of the model
 
 My final model results were:
-* training set accuracy of 0.996
-* validation set accuracy of 0.987
+* training set accuracy of 0.99
+* validation set accuracy of 0.98
 * test set accuracy of 0.97
 
 The initial architecture of the neural network was choosen LeNet. Using the original dataset with simple normalization ((pixel-128)/128) test set accuracy was 82%.
@@ -151,17 +153,33 @@ The results of the prediction:
 
 ![alt text][image17]
 
-The model was able to correctly guess 12 of the 13 traffic signs before architecture tunning and 13 after, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 97%.
+The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 97%.
 
 #### 3. Discussion on model certainty
 
 As seen on top 5 probabilities for each new traffic sign image the model is quite certain. Mostly the model is confident about it's predictions, because the probability 
-for all correct answers is very high relative to other probabilities.
+for all correct answers is very high relative to other probabilities. 
 
 ![alt text][image19]
 
-The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
+Let's consider deep analysis for wrong cases
 
+![alt text][image22]
+When unswer is wrong the model is not confident in it's prediction and top 5 probabilites are low at all (<0.35).
+The sign was not predicted most likely because of position (not centered) and uniform deformation of the sign (height>width while the sign proportions should be equal). 
+I believe adding augmentation with centering and scale deformation, current project contains only non-uniform deformations.
+will increase model performance for such cases.
+
+![alt text][image22]
+For this traffic sign wrong predicted sign is quite similar to the expected. It has equal outlines. The model confidence in this case very close for both classes (0.55 vs 0.4).
+Wrong prediction can be caused by relatively low subset of "pedestrians" signs (around 300) vs "right of way at the next intersection" (around 1250).
+I believe balancing of the dataset may fix this problem.
+
+![alt text][image23]
+For this traffic sign source image is very poor, it has graffity on the sign and added artificial sun light reflection. The model confidence in this case very low for all classes (<0.2).
+It means the model is very non confident in it's prediction, which is expected.
+
+The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
 ## (Optional) Visualizing the Neural Network
 #### 1. Discuss the visual output of the trained network's feature maps.
