@@ -165,11 +165,13 @@ for all correct answers is very high relative to other probabilities.
 Let's consider deep analysis for wrong cases
 
 ![alt text][image22]
+
 For this traffic sign wrong predicted sign is quite similar to the expected. It has equal outlines. The model confidence in this case very close for both classes (0.55 vs 0.4).
 Wrong prediction can be caused by relatively low subset of "pedestrians" signs (around 300) vs "right of way at the next intersection" (around 1250).
 I believe balancing of the dataset may fix this problem.
 
 ![alt text][image23]
+
 For this traffic sign source image is very poor, it has graffity on the sign and added artificial sun light reflection. The model confidence in this case very low for all classes (<0.2).
 It means the model is very non confident in it's prediction, which is expected.
 
